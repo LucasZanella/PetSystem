@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
         do {
             switch (menuInicial()){
@@ -57,18 +58,25 @@ public class Main {
         }while (true);
     }
 
+    static boolean enter = false;
+
     public static int menuInicial(){
         Scanner menu_escolha = new Scanner(System.in);
+
+        if(enter){
+            System.out.println("\n\n\n\n");
+        }
 
         System.out.println("=============================================");
         System.out.println("\t\t\t  MENU DA APLICAÇÃO ");
         System.out.println("=============================================");
-        System.out.println("1 -> Cadastro de clientes.");
-        System.out.println("2 -> Cadastro de pets.");
-        System.out.println("3 -> Serviços e controle de caixa.");
-        System.out.println("0 -> Sair do sistema.");
+        System.out.println("* 1 -> Cadastro de clientes.");
+        System.out.println("* 2 -> Cadastro de pets.");
+        System.out.println("* 3 -> Serviços e controle de caixa.");
+        System.out.println("* 0 -> Sair do sistema.");
         System.out.println("=============================================");
         System.out.print("Digite sua opção:\t");
+        enter = true;
 
         return menu_escolha.nextInt();
     }
@@ -76,6 +84,7 @@ public class Main {
     public static int subMenuCliente(){
         Scanner menu_escolha = new Scanner(System.in);
 
+        System.out.println("\n\n\n\n");
         System.out.println("=============================================");
         System.out.println("\t    MENU DA APLICAÇÃO --> CLIENTES");
         System.out.println("=============================================");
@@ -96,6 +105,7 @@ public class Main {
     public static int subMenuPet(){
         Scanner menu_escolha = new Scanner(System.in);
 
+        System.out.println("\n\n\n\n");
         System.out.println("=============================================");
         System.out.println("\t\t  MENU DA APLICAÇÃO --> PETS");
         System.out.println("=============================================");
@@ -115,6 +125,7 @@ public class Main {
     public static int subMenuServicos(){
         Scanner menu_escolha = new Scanner(System.in);
 
+        System.out.println("\n\n\n\n");
         System.out.println("=============================================");
         System.out.println("\t\tMENU DA APLICAÇÃO --> SERVIÇOS");
         System.out.println("=============================================");
