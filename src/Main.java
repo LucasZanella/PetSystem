@@ -67,14 +67,14 @@ public class Main {
             System.out.println("\n\n\n\n");
         }
 
-        System.out.println("=============================================");
-        System.out.println("\t\t\t  MENU DA APLICAÇÃO ");
-        System.out.println("=============================================");
+        System.out.println("=====================================");
+        System.out.println("\t  MENU DA APLICAÇÃO ");
+        System.out.println("=====================================");
         System.out.println("* 1 -> Cadastro de clientes.");
         System.out.println("* 2 -> Cadastro de pets.");
         System.out.println("* 3 -> Serviços e controle de caixa.");
         System.out.println("* 0 -> Sair do sistema.");
-        System.out.println("=============================================");
+        System.out.println("=====================================");
         System.out.print("Digite sua opção:\t");
         enter = true;
 
@@ -85,9 +85,9 @@ public class Main {
         Scanner menu_escolha = new Scanner(System.in);
 
         System.out.println("\n\n\n\n");
-        System.out.println("=============================================");
-        System.out.println("\t    MENU DA APLICAÇÃO --> CLIENTES");
-        System.out.println("=============================================");
+        System.out.println("=====================================");
+        System.out.println("   MENU DA APLICAÇÃO --> CLIENTES");
+        System.out.println("=====================================");
         System.out.println("1. Cadastro de clientes.");
         System.out.println("\t* 1 ->  Incluir clientes.");
         System.out.println("\t* 2 ->  Listar clientes.");
@@ -96,7 +96,7 @@ public class Main {
         System.out.println("2. Cadastro de pets.");
         System.out.println("3. Serviços e controle de caixa.");
         System.out.println("0. Sair do sistema.");
-        System.out.println("=============================================");
+        System.out.println("=====================================");
         System.out.print("Digite sua opção:\t");
 
         return menu_escolha.nextInt();
@@ -106,9 +106,9 @@ public class Main {
         Scanner menu_escolha = new Scanner(System.in);
 
         System.out.println("\n\n\n\n");
-        System.out.println("=============================================");
-        System.out.println("\t\t  MENU DA APLICAÇÃO --> PETS");
-        System.out.println("=============================================");
+        System.out.println("=====================================");
+        System.out.println("     MENU DA APLICAÇÃO --> PETS");
+        System.out.println("=====================================");
         System.out.println("1. Cadastro de clientes.");
         System.out.println("2. Cadastro de pets.");
         System.out.println("\t* 1 ->  Incluir pets.");
@@ -116,7 +116,7 @@ public class Main {
         System.out.println("\t* 0 ->  Voltar.\n");
         System.out.println("3. Serviços e controle de caixa.");
         System.out.println("0. Sair do sistema.");
-        System.out.println("=============================================");
+        System.out.println("=====================================");
         System.out.print("Digite sua opção:\t");
 
         return menu_escolha.nextInt();
@@ -126,9 +126,9 @@ public class Main {
         Scanner menu_escolha = new Scanner(System.in);
 
         System.out.println("\n\n\n\n");
-        System.out.println("=============================================");
-        System.out.println("\t\tMENU DA APLICAÇÃO --> SERVIÇOS");
-        System.out.println("=============================================");
+        System.out.println("=====================================");
+        System.out.println("   MENU DA APLICAÇÃO --> SERVIÇOS");
+        System.out.println("=====================================");
         System.out.println("1. Cadastro de clientes.");
         System.out.println("2. Cadastro de pets.");
         System.out.println("3. Serviços e controle de caixa.");
@@ -138,7 +138,7 @@ public class Main {
         System.out.println("\t* 4 ->  Listar clientes com saldo negativo.");
         System.out.println("\t* 0 ->  Voltar.\n");
         System.out.println("0. Sair do sistema.");
-        System.out.println("=============================================");
+        System.out.println("=====================================");
         System.out.print("Digite sua opção:\t");
 
         return menu_escolha.nextInt();
