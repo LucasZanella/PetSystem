@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
         try {
             do {
+                ArquivoControlador.verificaArquivo();
                 switch (menuInicial()){
                     case 0:
                         System.exit(0);
@@ -17,7 +18,7 @@ public class Main {
                                 ClientesControlador.inputCliente();
                             break;
                             case 2:
-
+                                ClientesControlador.mostraClientes();
                             break;
                             case 3:
 
