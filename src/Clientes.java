@@ -11,7 +11,7 @@ public class Clientes {
         this.nome = nome;
         this.endereco = endereco;
         this.telefone = telefone;
-        this.saldo = saldo;
+        this.saldo = 0.0;
         this.pets = pets;
     }
 

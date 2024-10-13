@@ -3,59 +3,60 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        do {
-            switch (menuInicial()){
-                case 0:
-                    System.exit(0);
-                break;
-                case 1:
-                    switch (subMenuCliente()){
-                        case 0:
+        try {
+            do {
+                switch (menuInicial()){
+                    case 0:
+                        System.exit(0);
+                    break;
+                    case 1:
+                        switch (subMenuCliente()){
+                            case 0:
+                                break;
+                            case 1:
+
                             break;
-                        case 1:
+                            case 2:
 
-                        break;
-                        case 2:
-
-                        break;
-                        case 3:
-
-                        break;
-                        default: System.out.println("\t\tDigite o respectivo número!!");
-                    }
-                break;
-                case 2:
-                    switch (subMenuPet()){
-                        case 0:
                             break;
-                        case 1:
+                            case 3:
 
-                        break;
-                        case 2:
-
-                        break;
-                        default: System.out.println("\t\tDigite o respectivo número!!");
-                    }
-                break;
-                case 3:
-                    switch (subMenuServicos()){
-                        case 0:
                             break;
-                        case 1:
+                        }
+                    break;
+                    case 2:
+                        switch (subMenuPet()){
+                            case 0:
+                                break;
+                            case 1:
 
-                        break;
-                        case 2:
+                            break;
+                            case 2:
 
-                        break;
-                        case 3:
+                            break;
+                        }
+                    break;
+                    case 3:
+                        switch (subMenuServicos()){
+                            case 0:
+                                break;
+                            case 1:
 
-                        break;
-                        default: System.out.println("\t\tDigite o respectivo número!!");
-                    }
-                break;
-                default: System.out.println("\t\tDigite o respectivo número!!");
-            }
-        }while (true);
+                            break;
+                            case 2:
+
+                            break;
+                            case 3:
+
+                            break;
+                        }
+                    break;
+                }
+            }while (true);
+
+        } catch (Exception e) {
+            System.out.println("\n\t!!Atenção!!\nDigite o número correto!");
+        }
     }
 
     static boolean enter = false;
