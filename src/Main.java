@@ -14,7 +14,7 @@ public class Main {
                             case 0:
                                 break;
                             case 1:
-
+                                ClientesControlador.inputCliente();
                             break;
                             case 2:
 

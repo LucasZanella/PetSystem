@@ -1,18 +1,28 @@
 import java.util.ArrayList;
 
 public class Clientes {
+    private String cpf;
     private String nome;
     private String endereco;
     private String telefone;
     private Double saldo;
     private ArrayList<Pets> pets;
 
-    public Clientes(String nome, String endereco, String telefone, Double saldo, ArrayList<Pets> pets) {
+    public Clientes(String cpf, String nome, String endereco, String telefone, Double saldo, ArrayList<Pets> pets) {
+        this.cpf = cpf;
         this.nome = nome;
         this.endereco = endereco;
         this.telefone = telefone;
-        this.saldo = 0.0;
+        this.saldo = saldo;
         this.pets = pets;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
     public String getNome() {
@@ -53,5 +63,17 @@ public class Clientes {
 
     public void setPets(ArrayList<Pets> pets) {
         this.pets = pets;
+    }
+
+    @Override
+    public String toString() {
+        return "Clientes{" +
+                "cpf='" + cpf + '\'' +
+                ", nome='" + nome + '\'' +
+                ", endereco='" + endereco + '\'' +
+                ", telefone='" + telefone + '\'' +
+                ", saldo=" + saldo +
+                ", pets=" + pets.toString() +
+                '}';
     }
 }

@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class ClientesControlador {
 
-
-    public void inputCliente(){
+    public static void inputCliente() {
         Scanner input = new Scanner(System.in);
 
+        String cpf;
         String nome;
         String endereco;
         String telefone;
@@ -19,6 +19,9 @@ public class ClientesControlador {
                 System.out.println("=============================================");
                 System.out.println("\t    CADASTRO DE CLIENTE");
                 System.out.println("=============================================");
+
+                System.out.println("Informe o CPF:\t");
+                cpf = input.next();
 
                 System.out.println("Informe o nome:\t");
                 nome = input.next();
@@ -42,16 +45,15 @@ public class ClientesControlador {
             cadastroPets = input.next().equals("1");
 
             if (cadastroPets){
-                Clientes clientes = new Clientes(nome, endereco, telefone, preco, PetsControlador.);
+                Clientes cliente = new Clientes(cpf, nome, endereco, telefone, preco, PetsControlador.inputPets());
+                System.out.println(cliente.toString());
             } else {
-                Clientes clientes = new Clientes(nome, endereco, telefone, preco, null);
+                Clientes cliente = new Clientes(cpf, nome, endereco, telefone, preco, null);
+                System.out.println(cliente);
             }
 
         } catch (Exception e) {
             System.out.println("\t\t!!ATENÇÃO!!\nInforme os valores corretos de cada infromação!");
         }
-
-        Clientes clientes = new Clientes(nome, endereco, telefone, preco, );
-
     }
 }

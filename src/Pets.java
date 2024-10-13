@@ -1,12 +1,22 @@
 public class Pets {
+    private String nome;
     private String raca;
     private Integer idade;
     private String descricao;
 
-    public Pets(String descricao, Integer idade, String raca) {
-        this.descricao = descricao;
+    public Pets(String nome, String raca, Integer idade, String descricao) {
+        this.nome = nome;
         this.idade = idade;
         this.raca = raca;
+        this.descricao = descricao;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getDescricao() {
@@ -31,5 +41,15 @@ public class Pets {
 
     public void setRaca(String raca) {
         this.raca = raca;
+    }
+
+    @Override
+    public String toString() {
+        return "Pets{" +
+                "nome='" + nome + '\'' +
+                ", raca='" + raca + '\'' +
+                ", idade=" + idade +
+                ", descricao='" + descricao + '\'' +
+                '}';
     }
 }
